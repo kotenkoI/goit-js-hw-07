@@ -22,11 +22,11 @@ body {
 }
 .gallery > img {
 display: block;
-width: calc((100% - 56x) / 3);
+width: calc((100% - 56px) / 3);
 }
 .gallery > li {
   display: block;
-  width: calc((100% - 56x) / 3);
+  width: calc((100% - 56px) / 3);
 }
 img {
   display: block;
