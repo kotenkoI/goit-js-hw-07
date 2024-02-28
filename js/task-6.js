@@ -12,13 +12,13 @@ const destroyBtn = document.querySelector('#destroy-button');
 createBtn.addEventListener('click', createBoxes);
 function createBoxes() {
   destroyBoxes();
-  const boxAmount = parseInt(numberInput.ariaValueMax, 10);
+  const boxAmount = parseInt(numberInput.value, 10);
   if (boxAmount > 0 && boxAmount <= 100) {
     for (let i = 0; i < boxAmount; i++) {
       const newBox = document.createElement('div');
       newBox.style.backgroundColor = getRandomHexColor();
       newBox.style.width = `${30 + 10 * i}px`; 
-      new.style.height = `${30 + 10 * i}px`;
+      newBox.style.height = `${30 + 10 * i}px`;
       newBox.className = 'box';
       boxes.append(newBox);
     }
